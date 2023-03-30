@@ -2,12 +2,19 @@
 #include<string>
 #include<algorithm>
 
-int main(int argc, char** argv)
+//useful defines
+#define PROGRAM_CODE_OK 0
+#define PROGRAM_CODE_BAD 1
+typedef int PROGRAM_RESULT;
+typedef char** CHR_STR_ARR;
+typedef const char* CHR_STR_CONST;
+
+PROGRAM_RESULT main(int argc, CHR_STR_ARR argv)
 {	
 	std::cout 
 		<< "Capture las palabras a continuación..." 
 		<< "\n";
-	const char * palabras[22];
+	CHR_STR_CONST palabras[22];
 	palabras[0] = "virgen";
 	palabras[1] = "oso oso";
 	palabras[2] = "hormiguero";
@@ -53,4 +60,5 @@ int main(int argc, char** argv)
 	
 	std::cout << "Fin del programa" << "\n";
 	getchar();
+	return PROGRAM_CODE_OK;
 }
