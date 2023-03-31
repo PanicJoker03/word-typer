@@ -40,7 +40,7 @@ PROGRAM_RESULT main(int argc, CHR_STR_ARR argv)
 	palabras[22] = "cvdashlten";
 	palabras[23] = "Mucha gente no goza de las pequenias dulzuras.";
 	palabras[24] = "Dios se halla tan cerca como nosotros queramos.";
-	palabras[25] = "Donde hay risa, entra la longaniza.";
+	palabras[25] = "Donde hay risa, entra la brisa.";
 	
 	std::random_shuffle(
 		std::begin(palabras),
